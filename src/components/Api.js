@@ -7,7 +7,7 @@ export const searchQuote = async (quote) => {
     } catch (err) {}
   };
   
-  export const getQuotes = async (limit=10, offset=0) => {
+  export const getQuote = async () => {
     try {
       let url = `https://beta.adalab.es/curso-intensivo-fullstack-recursos/apis/quotes-friends-tv-v1/quotes.json`;
       const response = await fetch(url);
