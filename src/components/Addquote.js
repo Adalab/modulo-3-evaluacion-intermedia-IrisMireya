@@ -13,19 +13,20 @@ const addQuote = ({quotes, setQuotes}) => {
       <form>
           <h1>Añadir una nueva frase</h1>
         <div>
-          <span>Frase</span>
-          <input readOnly
+          <label htmlFor="quote">Frase</label>
+          <input
             className="filter1__input"
             type="text"
-            value= ""
+            id="quote"
+            
           />
         </div>
         <div>
-          <span>Personaje</span>
-          <input readOnly
+          <label htmlFor="character">Personaje</label>
+          <input
             className="filter2__input"
             type="text"
-            value= ""
+            id="character"
           />
         </div>
         <button onClick = {addNewQuote} >Añadir una nueva frase</button>

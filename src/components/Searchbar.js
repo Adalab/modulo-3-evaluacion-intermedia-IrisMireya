@@ -8,21 +8,21 @@ const Searchbar = ({quotes}) => {
     <form>
         <h1>Frases de Friends</h1>
       <div>
-        <span>Filtrar por frase</span>
+        <label htmlFor="filter_quote">Filtrar por frase</label>
         <input
           className="filter1__input"
           type="text"
           onChange={filterQuote}
-          value={1}
+          id="filter_quote"
         />
       </div>
       <div>
-        <span>Filtrar por personaje</span>
+        <label htmlFor="filter_character">Filtrar por personaje</label>
         <input
           className="filter2__input"
           type="text"
           onChange={filterCharacter}
-          value={1}
+          id="filter_character"
         />
       </div>
     </form>
