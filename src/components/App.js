@@ -3,7 +3,7 @@ import '../styles/App.scss';
 import Header from "../components/Header";
 import Searchbar from "./Searchbar";
 import Quotes from "./Quotes";
-import { getQuote } from "./Api";
+import { getQuote } from "../services/Api";
 import AddQuote from "./Addquote";
 
 const {useState, useEffect} = React;
