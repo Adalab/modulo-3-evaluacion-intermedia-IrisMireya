@@ -5,7 +5,7 @@ const filterCharacter = (ev) => {}
 
 const Searchbar = ({quotes}) => {
   return (
-    <div>
+    <form>
         <h1>Frases de Friends</h1>
       <div>
         <span>Filtrar por frase</span>
@@ -25,7 +25,7 @@ const Searchbar = ({quotes}) => {
           value={1}
         />
       </div>
-    </div>
+    </form>
   );
 };
 

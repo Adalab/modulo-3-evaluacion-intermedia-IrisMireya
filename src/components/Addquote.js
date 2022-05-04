@@ -2,6 +2,7 @@ import React from "react";
 
 const addQuote = ({quotes, setQuotes}) => {
     const addNewQuote = (ev)=> {
+      ev.preventDefault();
         const newQuote={
             quote:"",
             character:""
@@ -9,7 +10,7 @@ const addQuote = ({quotes, setQuotes}) => {
         setQuotes([...quotes, newQuote]);
     }
     return (
-      <div>
+      <form>
           <h1>Añadir una nueva frase</h1>
         <div>
           <span>Frase</span>
@@ -28,7 +29,7 @@ const addQuote = ({quotes, setQuotes}) => {
           />
         </div>
         <button onClick = {addNewQuote} >Añadir una nueva frase</button>
-      </div>
+      </form>
     );
   };
 
