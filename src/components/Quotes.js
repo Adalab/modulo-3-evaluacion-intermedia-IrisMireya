@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/layout/_quotes.scss";
 
 const Quotes = ({ quotes }) => {
   if (quotes.length === 0) {
