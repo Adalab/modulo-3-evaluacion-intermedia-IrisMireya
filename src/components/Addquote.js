@@ -24,27 +24,30 @@ const AddQuote = ({ quotes, setQuotes }) => {
   return (
     <form>
       <h1>Añadir una nueva frase</h1>
-      <div>
-        <label htmlFor="quote">Frase</label>
+      <div className="inputs">
+        <label htmlFor="quote">Frase: </label>
         <input
           className="filter1__input"
           type="text"
           id="quote"
           onChange={handleQuote}
-          value = {quote}
+          value={quote}
         />
-      </div>
-      <div>
-        <label htmlFor="character">Personaje</label>
+        <label htmlFor="character" className="character">
+          Personaje:{" "}
+        </label>
         <input
           className="filter2__input"
           type="text"
           id="character"
           onChange={handleCharacter}
-          value = {character}
+          value={character}
         />
       </div>
-      <button onClick={addNewQuote}>Añadir una nueva frase</button>
+
+      <button onClick={addNewQuote} className="btn">
+        Añadir una nueva frase
+      </button>
     </form>
   );
 };

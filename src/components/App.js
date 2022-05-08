@@ -18,7 +18,7 @@ export default function App() {
       .then((response) => response.json())
       .then((quotes) => {
         setQuotes(quotes);
-         setfilterQuotes(quotes);
+        setfilterQuotes(quotes);
       });
   }, []);
 
@@ -26,7 +26,11 @@ export default function App() {
     <div>
       <Header />
       <div className="App">
-        <Searchbar quotes={quotes} filterQuotes= {filterQuotes} setfilterQuotes={setfilterQuotes} />
+        <Searchbar
+          quotes={quotes}
+          filterQuotes={filterQuotes}
+          setfilterQuotes={setfilterQuotes}
+        />
         <Quotes quotes={filterQuotes} />
         <AddQuote quotes={filterQuotes} setQuotes={setQuotes} />
       </div>

@@ -10,12 +10,12 @@ const Quotes = ({ quotes }) => {
     return (
       <li className="quote__item" key={i}>
         <p className="quote__quote">
-          <label className="quote__label">Frase</label>
-          {quote.quote} 
+          <label className="quote__label1">• </label>
+          {quote.quote}
         </p>
         <p className="quote__character">
-          <label className="quote__label">Personaje</label>
-         {quote.character}
+          <label className="quote__label2">• </label>
+          {quote.character}
         </p>
       </li>
     );
